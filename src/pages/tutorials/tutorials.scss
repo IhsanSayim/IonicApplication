@@ -1,0 +1,65 @@
+page-tutorials {
+  code {
+    display: block;
+    white-space: pre-wrap
+  }
+
+  h1 {
+    font-family: Helvetica;
+    color: rgb(97, 11, 56);
+  }
+  h2 {
+    font-family: Helvetica;
+    color: rgb(97, 11, 56);
+  }
+
+  p{
+    font-family: Verdana;
+  }
+
+  .box {
+    height: 50px; ;
+    margin: 0;
+    background:#FFF;
+  }
+
+  .effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+  }
+
+  .accordion-list {
+    height: 100%;
+  }
+  .buttonColor{
+    background: #dfe3ee;
+  }
+
+  .label{
+    margin:0px;
+    font-weight: bold;
+  }
+  .list{
+    margin-bottom: 4px;
+  }
+
+  .bg-style{
+    background: #dfe3ee;
+  }
+  .list-header-md {
+    margin-bottom: 0px;
+  }
+
+  .deneme{
+    cursor: default;
+    opacity: .4;
+    pointer-events: none;
+  }
+
+  button[disabled]{
+    cursor: default;
+    opacity: 1;
+    pointer-events: none;
+  }
+}

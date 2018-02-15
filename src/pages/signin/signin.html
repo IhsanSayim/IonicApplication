@@ -1,0 +1,37 @@
+
+
+<ion-content padding class="bg">
+
+  <ion-row style="height: 32%">
+  </ion-row>
+
+  <div *ngIf='!authStatus' style="height: 55%">
+    <form (ngSubmit)="login()">
+      <ion-list>
+        <ion-item style="margin-bottom: 5px">
+          <ion-label stacked style="color:black!important;">Email</ion-label>
+          <ion-input [(ngModel)]="userEmail"
+                     type="email" name="userEmail" required></ion-input>
+        </ion-item>
+
+        <ion-item >
+          <ion-label stacked style="color:black!important;">Password</ion-label>
+          <ion-input [(ngModel)]="userPassword"
+                     type="password" name="userPassword" required></ion-input>
+        </ion-item>
+
+
+        <button type="submit" ion-button block color="color1">Login</button>
+      </ion-list>
+    </form>
+  </div>
+  <div *ngIf='authStatus'>
+    <button (click)='logout()' ion-button block color="color1">Logout</button>
+  </div>
+
+  <ion-row style="height: 12%">
+    <ion-label translate style="font-size: 14px; text-align: center;">
+      Don't have an account ? <a (click)='register()' style="color:#3b5998!important;" >Sign Up</a>
+    </ion-label>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,39 @@
+
+
+<ion-content padding class="bg">
+
+  <ion-row style="height: 25%">
+  </ion-row>
+
+
+  <form [formGroup]="myForm" (ngSubmit)="onSignup()" style="height:65%">
+    <ion-list>
+      <ion-item style="margin-bottom: 5px;">
+        <ion-label stacked style="color:black!important;">E-Mail</ion-label>
+        <ion-input formControlName="email" type="email" id="email" #email class="form-control"></ion-input>
+        <span *ngIf="!email.pristine && email.errors != null && email.errors['noEmail']">Invalid mail address</span>
+      </ion-item>
+      <ion-item style="margin-bottom: 5px;">
+        <ion-label stacked style="color:black!important;">Password</ion-label>
+        <ion-input formControlName="password" type="password" id="password" class="form-control"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label for="confirm-password" stacked style="color:black!important;">Confirm Password</ion-label>
+        <ion-input formControlName="confirmPassword" type="password" id="confirm-password" #confirmPassword
+                   class="form-control"></ion-input>
+        <span
+          *ngIf="!confirmPassword.pristine && confirmPassword.errors != null && confirmPassword.errors['passwordsNotMatch']">Passwords do not match</span>
+      </ion-item>
+
+
+      <button ion-button type="submit" [disabled]="!myForm.valid" block color="color1">Sign Up</button>
+
+
+    </ion-list>
+  </form>
+  <ion-row style="height: 15%">
+    <ion-label translate style="font-size: 14px; text-align: center;">
+      You have an account ? <a (click)='login()' style="color:#3b5998!important;">Sign In</a>
+    </ion-label>
+  </ion-row>
+</ion-content>

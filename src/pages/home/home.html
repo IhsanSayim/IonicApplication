@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-navbar color="color1">
+    <ion-title text-center>Java Tutorial</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+
+
+    <ion-row>
+      <ion-col>
+        <ion-card text-center (click)='tutorials()'>
+          <ion-card-header>
+          </ion-card-header>
+          <ion-icon name="md-book" color="color1"></ion-icon>
+          <ion-item >
+            <h3 style="text-align: center">
+              Tutorials
+            </h3>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card text-center  (click)='programs()'>
+          <ion-card-header>
+          </ion-card-header>
+          <ion-icon name="md-code-working" color="color1"></ion-icon>
+          <ion-item >
+            <h3 style="text-align: center">
+              Programs
+            </h3>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-card text-center  (click)='questions()'>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-icon name="help" color="color1"></ion-icon>
+        <ion-item >
+          <h3 style="text-align: center">
+            Questions
+          </h3>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card text-center (click)='profile()'>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-icon name="person" color="color1"></ion-icon>
+        <ion-item >
+          <h3 style="text-align: center">
+            Profile
+          </h3>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-card text-center (click)='about()'>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-icon name="information-circle" color="color1"></ion-icon>
+        <ion-item >
+          <h3 style="text-align: center">
+            About
+          </h3>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card text-center (click)='share()'>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-icon name="ios-share" color="color1"></ion-icon>
+        <ion-item >
+          <h3 style="text-align: center">
+            Share
+          </h3>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

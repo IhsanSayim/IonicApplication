@@ -1,0 +1,31 @@
+page-interview {
+
+  .accordion-list {
+    background: color($colors, color4);
+  }
+
+  .section {
+    background: #fff;
+    color: #000;
+  }
+
+  .section-active {
+    background: color($colors, color1);
+    color: #fff;
+  }
+
+  .label{
+    margin:0px;
+  }
+  .list{
+    margin-bottom: 4px;
+  }
+  .child-item{
+    padding:15px;
+  }
+
+  ion-label{
+    margin:0px;
+    white-space: normal;
+  }
+}
